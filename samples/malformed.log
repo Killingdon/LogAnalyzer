@@ -1,0 +1,23 @@
+[2026-10-22 09:00:00] [INFO] Batch import started
+[2026-10-22 09:00:01] [INFO] Reading input file customers.csv
+This line has no timestamp or level at all
+[2026-10-22 09:00:02] [DEBUG] Parsed 500 records
+
+[2026-10-22 09:00:03] [WARNING] Record 128 has an empty email address
+2026-10-22 09:00:04 [ERROR] Missing brackets around the timestamp
+[2026-10-22 25:61:00] [ERROR] Impossible time of day
+[2026-02-30 09:00:05] [ERROR] February 30th does not exist
+[2026-10-22 09:00:06] [NOTICE] Unknown log level
+[2026-10-22 09:00:07] ERROR Level without brackets
+[2026-10-22 09:00:08] [ERROR]
+[2026-10-22 09:00:09] [ERROR] Failed to insert record 311: duplicate key
+    at ImportService.insert(ImportService.java:88)
+    at ImportService.run(ImportService.java:41)
+[2026-10-22 09:00:10] [ERROR] Failed to insert record 311: duplicate key
+[2026-10-22 09:00:11
+[] [INFO] Empty timestamp
+[2026-10-22 09:00:12] [WARN] Alias level names are accepted
+[2026-10-22 09:00:13] [info] Lower-case levels are accepted too
+
+[2026-10-22 09:00:14] [CRITICAL] Import aborted: too many errors
+[2026-10-22 09:00:15] [INFO] Batch import finished with errors

@@ -1,0 +1,80 @@
+[2026-10-20 08:00:01] [INFO] Application started (version 3.4.1, pid 4812)
+[2026-10-20 08:00:01] [DEBUG] Loading configuration from /etc/orders/config.yaml
+[2026-10-20 08:00:02] [DEBUG] Configuration loaded: 42 keys
+[2026-10-20 08:00:02] [INFO] Connecting to database orders-db:5432
+[2026-10-20 08:00:03] [INFO] Database connection established
+[2026-10-20 08:00:03] [INFO] HTTP server listening on port 8080
+[2026-10-20 08:00:04] [TRACE] Worker pool initialised with 16 workers
+[2026-10-20 08:05:12] [INFO] Health check passed
+[2026-10-20 08:15:40] [INFO] User login successful
+[2026-10-20 08:16:02] [DEBUG] Cache miss for key product:1042
+[2026-10-20 08:16:02] [DEBUG] Cache entry stored for key product:1042
+[2026-10-20 08:22:17] [INFO] Order created
+[2026-10-20 08:30:00] [INFO] Health check passed
+[2026-10-20 08:41:55] [WARNING] Slow query detected (1840 ms): SELECT * FROM orders WHERE status = 'PENDING'
+[2026-10-20 08:45:10] [INFO] User login successful
+[2026-10-20 08:52:33] [INFO] Order created
+[2026-10-20 09:00:00] [INFO] Health check passed
+[2026-10-20 09:03:14] [WARNING] High memory usage detected (87%)
+[2026-10-20 09:10:02] [INFO] User login successful
+[2026-10-20 09:10:45] [INFO] Order created
+[2026-10-20 09:12:30] [ERROR] Payment gateway timeout after 30 s
+[2026-10-20 09:12:31] [INFO] Retrying payment request (attempt 2 of 3)
+[2026-10-20 09:12:33] [INFO] Payment authorised
+[2026-10-20 09:20:44] [DEBUG] Cache miss for key product:2210
+[2026-10-20 09:30:00] [INFO] Health check passed
+[2026-10-20 09:47:19] [WARNING] Slow query detected (2210 ms): SELECT * FROM orders WHERE status = 'PENDING'
+[2026-10-20 10:00:00] [INFO] Health check passed
+[2026-10-20 10:02:11] [INFO] User login successful
+[2026-10-20 10:14:27] [INFO] Order created
+[2026-10-20 10:14:28] [INFO] Order created
+[2026-10-20 10:20:05] [WARNING] High memory usage detected (91%)
+[2026-10-20 10:21:40] [ERROR] Database connection failed
+[2026-10-20 10:21:41] [DEBUG] Retrying connection
+[2026-10-20 10:21:43] [ERROR] Database connection failed
+[2026-10-20 10:21:44] [DEBUG] Retrying connection
+[2026-10-20 10:21:48] [ERROR] Database connection failed
+[2026-10-20 10:21:49] [CRITICAL] Database unavailable after 3 attempts, switching to read-only mode
+[2026-10-20 10:21:50] [WARNING] Running in read-only mode
+[2026-10-20 10:22:15] [ERROR] Failed to create order: database is read-only
+[2026-10-20 10:22:40] [ERROR] Failed to create order: database is read-only
+[2026-10-20 10:23:02] [ERROR] Payment gateway timeout after 30 s
+[2026-10-20 10:23:30] [ERROR] Failed to create order: database is read-only
+[2026-10-20 10:25:00] [INFO] Database connection re-established
+[2026-10-20 10:25:00] [INFO] Leaving read-only mode
+[2026-10-20 10:30:00] [INFO] Health check passed
+[2026-10-20 10:31:12] [INFO] Order created
+[2026-10-20 10:44:51] [INFO] User login successful
+[2026-10-20 10:45:03] [WARNING] Invalid login attempt for user 'admin' from 203.0.113.17
+[2026-10-20 10:45:09] [WARNING] Invalid login attempt for user 'admin' from 203.0.113.17
+[2026-10-20 10:45:15] [WARNING] Invalid login attempt for user 'admin' from 203.0.113.17
+[2026-10-20 10:45:16] [ERROR] Account 'admin' locked after 3 failed login attempts
+[2026-10-20 11:00:00] [INFO] Health check passed
+[2026-10-20 11:08:36] [INFO] Order created
+[2026-10-20 11:15:20] [DEBUG] Cache miss for key product:1042
+[2026-10-20 11:30:00] [INFO] Health check passed
+[2026-10-20 11:42:09] [WARNING] Slow query detected (1975 ms): SELECT * FROM orders WHERE status = 'PENDING'
+[2026-10-20 12:00:00] [INFO] Health check passed
+[2026-10-20 12:05:44] [INFO] User login successful
+[2026-10-20 12:06:10] [INFO] Order created
+[2026-10-20 12:30:00] [INFO] Health check passed
+[2026-10-20 12:58:03] [ERROR] Payment gateway timeout after 30 s
+[2026-10-20 12:58:04] [INFO] Retrying payment request (attempt 2 of 3)
+[2026-10-20 12:58:06] [INFO] Payment authorised
+[2026-10-20 13:00:00] [INFO] Health check passed
+[2026-10-20 13:30:00] [INFO] Health check passed
+[2026-10-20 13:45:27] [WARNING] Disk usage at 85% on /var/lib/orders
+[2026-10-20 14:00:00] [INFO] Health check passed
+[2026-10-20 14:30:22] [INFO] Scheduled report generation started
+[2026-10-20 14:30:25] [WARNING] High memory usage detected (89%)
+[2026-10-20 14:30:30] [ERROR] Database connection failed
+[2026-10-20 14:30:35] [DEBUG] Retrying connection
+[2026-10-20 14:30:37] [INFO] Database connection re-established
+[2026-10-20 14:31:10] [INFO] Scheduled report generation finished in 48 s
+[2026-10-20 15:00:00] [INFO] Health check passed
+[2026-10-20 15:30:00] [INFO] Health check passed
+[2026-10-20 16:00:00] [INFO] Health check passed
+[2026-10-20 16:12:45] [INFO] User logout
+[2026-10-20 17:59:58] [INFO] Shutdown requested (SIGTERM)
+[2026-10-20 17:59:59] [INFO] Draining 3 in-flight requests
+[2026-10-20 18:00:00] [INFO] Application stopped

@@ -1,0 +1,24 @@
+# Build output
+build/
+out/
+cmake-build-*/
+CMakeUserPresets.json
+compile_commands.json
+
+# IDE files
+.vs/
+# Unused Visual Studio template project (the build is CMake-based)
+Multithreaded Log Analyzer.slnx
+Multithreaded Log Analyzer/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Generated reports (keep the directory itself)
+reports/*
+!reports/.gitkeep
+
+# Large generated benchmark inputs (create them with `loganalyzer generate`)
+samples/large*.log
+samples/generated*.log
